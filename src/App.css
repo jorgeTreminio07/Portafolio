@@ -1,0 +1,65 @@
+/* Animación flotante */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Clase combinada */
+.float-fade {
+  animation: float 3s ease-in-out infinite, fadeIn 1.5s ease-out forwards;
+}
+
+.fade-in {
+animation: fadeIn 0.5s ease-out forwards;
+}
+
+.fade-intwo {
+  opacity: 0;                /* empieza invisible */
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1s;  
+}
+
+.fade-inthree {
+  opacity: 0;                /* empieza invisible */
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1.4s;        /* espera 4 segundos */
+}
+
+.fade-infour {
+  opacity: 0;                /* empieza invisible */
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1.8s;        /* espera 4 segundos */
+}
+
+/* Animación de izquierda a derecha */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Clase para usar en React */
+.slide-right {
+  animation: slideRight 1.5s ease-out forwards;
+}
+
+/* Ocultar scroll en todos los navegadores */
+::-webkit-scrollbar {
+  display: none;
+}
+
