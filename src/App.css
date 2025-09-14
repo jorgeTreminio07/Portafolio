@@ -80,7 +80,11 @@ body {
 }
 
 .gradient-burguernaver {
-  background: linear-gradient(45deg,#10182d, #1b0e54,#1e0552, #10182d);
+  background:  radial-gradient(
+    circle at 50% -20%,        /* El centro del círculo está en la parte superior */
+    #1655b4 -70%,               /* Un azul vibrante que se difumina */
+    #0d111c 60%                 /* Se mezcla con el color de fondo */
+  );
 }
 
 html {
@@ -116,6 +120,7 @@ html {
   }
 }
 
+/* Animación de subrayado navbar*/
 .underline-animate {
   position: relative;
   color: inherit; /* mantiene el color del texto */

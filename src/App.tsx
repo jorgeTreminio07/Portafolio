@@ -29,22 +29,13 @@ function App() {
             <a href="#inicio" className="hover:text-blue-500 underline-animate">
               Inicio
             </a>
-            <a
-              href="#tecnologias"
-              className="hover:text-blue-500 underline-animate"
-            >
+            <a href="#tecnologias" className="underline-animate">
               Tecnologías
             </a>
-            <a
-              href="#proyectos"
-              className="hover:text-blue-500 underline-animate"
-            >
+            <a href="#proyectos" className="underline-animate">
               Proyectos
             </a>
-            <a
-              href="#experiencia"
-              className="hover:text-blue-500 underline-animate"
-            >
+            <a href="#experiencia" className="underline-animate">
               Experiencia
             </a>
           </div>
@@ -98,7 +89,10 @@ function App() {
         {/* Contenedor Flex para avatar y texto */}
         <div className="flex flex-col col-span-2 lg:flex-row items-center lg:items-start justify-center w-full">
           {/* AVATAR */}
-          <aside className="mb-6 lg:mb-0 lg:mr-10 order-first lg:order-last flex-shrink-0">
+          <aside
+            className="mb-6 lg:mb-0 lg:mr-10 order-first lg:order-last flex-shrink-0  scroll-mt-70"
+            id="inicio"
+          >
             <div className="relative w-64 h-64 rounded-full">
               <div className="absolute inset-0 rounded-full bg-[#1655b4] blur-lg float-fade"></div>
               <img
@@ -110,7 +104,7 @@ function App() {
           </aside>
 
           {/* TEXTO DE PRESENTACIÓN */}
-          <section className="text-white mt-6 lg:mt-0 max-w-xl scroll-mt-70 order-last lg:order-first flex flex-col">
+          <section className="text-white mt-6 lg:mt-0 max-w-xl order-last lg:order-first flex flex-col">
             <h1 className="text-4xl font-black slide-right text-center lg:text-left">
               ¡Hola! ✌️ Soy{" "}
               <span className="font-black fade-in bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent ">
