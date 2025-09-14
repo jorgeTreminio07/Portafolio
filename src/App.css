@@ -63,3 +63,17 @@ animation: fadeIn 0.5s ease-out forwards;
   display: none;
 }
 
+/*disenos pagina*/
+body {
+  /* background-color: #0a0f1c; */
+  color: white;
+  background: linear-gradient(to right, #10182d,#1b0e54,#31104c, #10182d);
+}
+
+html {
+  scrollbar-width: none;
+   scroll-behavior: smooth; 
+
+}
+
+

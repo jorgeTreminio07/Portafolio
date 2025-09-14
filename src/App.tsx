@@ -7,11 +7,11 @@ import cv from "../public/Eduardo_Treminio_FullStack_Developer.pdf";
 
 function App() {
   return (
-    <div className="bg-[#0a0f1c] text-white">
-      <header className="mx-auto container p-4">
+    <>
+      <header className="px-20 fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md">
         {/* NAVBAR */}
         <nav
-          className="flex justify-between items-center p-4 fade-intwo bg-[#0a0f1c]"
+          className="flex justify-between items-center p-4 fade-intwo "
           aria-label="Menú principal"
         >
           <a href="/" className="text-xl font-bold" aria-label="Ir al inicio">
@@ -34,9 +34,9 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className="flex flex-wrap flex-row mt-30 justify-center space-x-20">
+      <main className="min-h-screen pt-50 flex flex-wrap flex-row justify-center space-x-20">
         {/* TEXTO DE PRESENTACIÓN */}
-        <section className="text-white mt-10 max-w-xl" id="inicio">
+        <section className="text-white mt-10 max-w-xl scroll-mt-70" id="inicio">
           <h1 className="text-4xl font-black slide-right">
             ¡Hola! ✌️ Soy{" "}
             <span className="font-black fade-in bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
@@ -112,7 +112,7 @@ function App() {
       <footer className="text-center py-6 text-gray-400 text-sm">
         © {new Date().getFullYear()} Jorge Treminio - Desarrollador Full Stack
       </footer>
-    </div>
+    </>
   );
 }
 
