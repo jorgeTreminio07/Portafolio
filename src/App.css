@@ -67,7 +67,11 @@ animation: fadeIn 0.5s ease-out forwards;
 body {
   /* background-color: #0a0f1c; */
   color: white;
-  background: linear-gradient(to right, #10182d,#1b0e54,#31104c, #10182d);
+  background: linear-gradient(to right, #10182d,#1b0e54,#1e0552, #10182d);
+}
+
+.gradient-burguernaver {
+  background: linear-gradient(to right,#10182d, #1b0e54,#1e0552, #10182d);
 }
 
 html {
@@ -76,4 +80,6 @@ html {
 
 }
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 

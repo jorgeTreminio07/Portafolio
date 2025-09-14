@@ -1,0 +1,15 @@
+# Aplica a todos los robots
+User-agent: *
+
+# Permitir indexación de todo el contenido público
+Allow: /
+
+
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /src/
+Disallow: /vite/
+Disallow: *.map
+
+

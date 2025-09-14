@@ -1,24 +1,31 @@
 import "./App.css";
 import { Button } from "@heroui/button";
-import george from "../public/george.jpg";
-import github from "../public/github.png";
-import linkdedin from "../public/linkedin.png";
+import george from "../public/george.webp";
+import github from "../public/github.webp";
+import linkdedin from "../public/linkedin.webp";
 import cv from "../public/Eduardo_Treminio_FullStack_Developer.pdf";
+import { useState } from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="px-20 fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md">
-        {/* NAVBAR */}
+      <header className="px-6 md:px-20 fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md">
         <nav
-          className="flex justify-between items-center p-4 fade-intwo "
+          className="flex justify-between items-center p-4 fade-intwo"
           aria-label="Menú principal"
         >
-          <a href="/" className="text-xl font-bold" aria-label="Ir al inicio">
+          {/* LOGO */}
+          <a
+            href="/"
+            className="text-xl font-sans font-bold"
+            aria-label="Ir al inicio"
+          >
             Jorge Treminio
           </a>
 
-          <div className="flex gap-5 text-lg font-semibold">
+          {/* ENLACES DESKTOP */}
+          <div className="hidden md:flex gap-5 text-lg font-semibold">
             <a href="#inicio" className="hover:text-blue-500">
               Inicio
             </a>
@@ -32,6 +39,49 @@ function App() {
               Experiencia
             </a>
           </div>
+
+          {/* BOTÓN HAMBURGUESA */}
+          <button
+            className="md:hidden text-2xl focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Abrir menú"
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+
+          {/* MENÚ MÓVIL */}
+          {isOpen && (
+            <div className="absolute top-full left-0 w-full gradient-burguernaver text-white flex flex-col items-center py-4 space-y-3 md:hidden">
+              <a
+                href="#inicio"
+                className="hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Inicio
+              </a>
+              <a
+                href="#tecnologias"
+                className="hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Tecnologías
+              </a>
+              <a
+                href="#proyectos"
+                className="hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Proyectos
+              </a>
+              <a
+                href="#experiencia"
+                className="hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Experiencia
+              </a>
+            </div>
+          )}
         </nav>
       </header>
       <main className="min-h-screen pt-50 flex flex-wrap flex-row justify-center space-x-20">
@@ -44,7 +94,7 @@ function App() {
             </span>
           </h1>
 
-          <h2 className="mt-3 font-semibold text-2xl fade-intwo">
+          <h2 className="mt-3 font-bold text-2xl fade-intwo">
             Desarrollador Full Stack
           </h2>
 
