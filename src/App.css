@@ -14,13 +14,12 @@
   100% { opacity: 1; }
 }
 
+.fade-in {
+animation: fadeIn 0.5s ease-out forwards;
+}
 /* Clase combinada */
 .float-fade {
   animation: float 3s ease-in-out infinite, fadeIn 1.5s ease-out forwards;
-}
-
-.fade-in {
-animation: fadeIn 0.5s ease-out forwards;
 }
 
 .fade-intwo {
@@ -67,11 +66,21 @@ animation: fadeIn 0.5s ease-out forwards;
 body {
   /* background-color: #0a0f1c; */
   color: white;
-  background: linear-gradient(to right, #10182d,#1b0e54,#1e0552, #10182d);
+ background-color: #0d111c;
+  
+  /* Aplica el degradado radial como un fondo adicional */
+  background-image: radial-gradient(
+    circle at 50% -20%,        /* El centro del círculo está en la parte superior */
+    #1655b4 -70%,               /* Un azul vibrante que se difumina */
+    #0d111c 60%                 /* Se mezcla con el color de fondo */
+  );
+
+  
+  /* background: linear-gradient(45deg, #10182d,#1b0e54,#1e0552, #10182d); */
 }
 
 .gradient-burguernaver {
-  background: linear-gradient(to right,#10182d, #1b0e54,#1e0552, #10182d);
+  background: linear-gradient(45deg,#10182d, #1b0e54,#1e0552, #10182d);
 }
 
 html {
@@ -80,6 +89,55 @@ html {
 
 }
 
+/*Animacion brillo texto*/
+.shine-text {
+  background: linear-gradient(
+    to right,
+    #f8f8f8,
+    #f8f8f8,
+    #1655b4,
+    #f8f8f8,
+    #f8f8f8
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto; /* gradiente más largo que el texto */
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards 1s,
+             shine 6s linear infinite 0.5s;
+}
 
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.underline-animate {
+  position: relative;
+  color: inherit; /* mantiene el color del texto */
+  text-decoration: none;
+}
+
+.underline-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;      /* espacio entre el texto y la línea */
+  height: 2px;        /* grosor de la línea */
+  width: 100%;
+  background-color: #3b82f6; /* azul, cambia si quieres otro color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.underline-animate:hover::after {
+  transform: scaleX(1);
+}
+
+
 
