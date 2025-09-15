@@ -1,5 +1,7 @@
 import CardTechnologies from "../desingComponents/cardTechnologies";
 import { frontendLogos } from "../../const/frontLogos.const";
+import { backendLogos } from "../../const/backLogos.const";
+import { toolsLogos } from "../../const/toolsLogos.const";
 
 export default function Technologies() {
   return (
@@ -24,7 +26,7 @@ export default function Technologies() {
             ))}
           </CardTechnologies>
           <CardTechnologies title="Backend">
-            {frontendLogos.map((logo: any, index: number) => (
+            {backendLogos.map((logo: any, index: number) => (
               <div key={index} className="flex flex-col items-center gap-2">
                 <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
                 <span className="text-white font-semibold text-sm">
@@ -33,29 +35,16 @@ export default function Technologies() {
               </div>
             ))}
           </CardTechnologies>
-          {/* <CardTechnologies title="Bases de datos">
-            <img
-              alt="Logo de LinkedIn"
-              className="hover:bg-gradient-to-r from-blue-500 to-blue-800 w-10 h-10 rounded-full transform transition-transform duration-300 hover:scale-110"
-            />
-            <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
-              x
-            </span>
-            <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
-              x
-            </span>
-          </CardTechnologies>
           <CardTechnologies title="Herramientas">
-            <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
-              x
-            </span>
-            <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
-              x
-            </span>
-            <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm">
-              x
-            </span>
-          </CardTechnologies> */}
+            {toolsLogos.map((logo: any, index: number) => (
+              <div key={index} className="flex flex-col items-center gap-2">
+                <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
+                <span className="text-white font-semibold text-sm">
+                  {logo.name}
+                </span>
+              </div>
+            ))}
+          </CardTechnologies>
         </div>
       </section>
     </>
