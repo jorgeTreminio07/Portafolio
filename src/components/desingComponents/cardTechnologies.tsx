@@ -13,7 +13,9 @@ export default function CardTechnologies({
         <h2 className="shine-text text-2xl font-bold text-white text-center">
           {title}
         </h2>
-        <div className="grid grid-cols-4 gap-4 mt-3">{children}</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3">
+          {children}
+        </div>
       </div>
     </>
   );
