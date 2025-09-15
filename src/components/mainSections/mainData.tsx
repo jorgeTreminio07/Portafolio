@@ -25,7 +25,7 @@ export default function MainData() {
         </aside>
 
         {/* TEXTO DE PRESENTACIÓN */}
-        <section className="text-white mt-6 lg:mt-0 max-w-xl order-last lg:order-first flex flex-col">
+        <section className="text-white mt-6 lg:mt-0 max-w-xl order-last lg:order-first flex flex-col lg:pl-10">
           <h1 className="text-4xl font-black slide-right text-center lg:text-left">
             ¡Hola! ✌️ Soy{" "}
             <span className="font-black fade-in bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent ">
@@ -39,9 +39,8 @@ export default function MainData() {
 
           <p className="mt-2 fade-inthree leading-relaxed text-center lg:text-start lg:pr-20">
             Especializado en la creación de{" "}
-            <strong>aplicaciones web dinámicas</strong> y escalables. Con
-            dominio de tecnologías modernas como <strong>React</strong> y{" "}
-            <strong>.Net </strong>. Apasionado por el aprendizaje continuo y la
+            <strong>aplicaciones web dinámicas</strong> y escalables. Apasionado
+            por el aprendizaje continuo y la
             <strong> construcción de soluciones eficientes</strong> que aporten
             valor real a los usuarios.
           </p>
