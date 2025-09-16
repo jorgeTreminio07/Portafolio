@@ -19,7 +19,12 @@ export default function Technologies() {
           <CardTechnologies title="Frontend">
             {frontendLogos.map((logo: any, index: number) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="w-16 h-16"
+                />
                 <span className="text-white font-semibold text-sm">
                   {logo.name}
                 </span>
@@ -29,7 +34,12 @@ export default function Technologies() {
           <CardTechnologies title="Backend">
             {backendLogos.map((logo: any, index: number) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="w-16 h-16"
+                />
                 <span className="text-white font-semibold text-sm">
                   {logo.name}
                 </span>
@@ -39,7 +49,12 @@ export default function Technologies() {
           <CardTechnologies title="Herramientas">
             {toolsLogos.map((logo: any, index: number) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="w-16 h-16"
+                />
                 <span className="text-white font-semibold text-sm">
                   {logo.name}
                 </span>
@@ -49,7 +64,12 @@ export default function Technologies() {
           <CardTechnologies title="Mejorando Habilidades">
             {learnLogos.map((logo: any, index: number) => (
               <div key={index} className="flex flex-col items-center gap-2">
-                <img src={logo.src} alt={logo.alt} className="w-16 h-16" />
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="w-16 h-16"
+                />
                 <span className="text-white font-semibold text-sm">
                   {logo.name}
                 </span>

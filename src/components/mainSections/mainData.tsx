@@ -1,7 +1,7 @@
 import { Button } from "@heroui/button";
-import george from "../../../public/george.webp";
-import github from "../../../public/github.webp";
-import linkdedin from "../../../public/linkedin.webp";
+import george from "../../../public/george3.webp";
+import github from "../../../public/github2.webp";
+import linkdedin from "../../../public/linkedin2.webp";
 import cv from "../../../public/Eduardo_Treminio_FullStack_Developer.pdf";
 
 export default function MainData() {

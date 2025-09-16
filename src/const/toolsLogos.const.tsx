@@ -1,5 +1,5 @@
 import gitLogo from "../assets/herramientas/git.svg";
-import githubLogo from "../../public/github.webp";
+import githubLogo from "../../public/github2.webp";
 import dockerLogo from "../assets/herramientas/docker.svg";
 import bashLogo from "../assets/herramientas/bash.svg";
 import postmanLogo from "../assets/herramientas/postman.svg";
