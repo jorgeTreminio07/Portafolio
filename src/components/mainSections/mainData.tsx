@@ -1,5 +1,5 @@
 import { Button } from "@heroui/button";
-import george from "../../../public/george3.webp";
+import george from "../../../public/george2.webp";
 import github from "../../../public/github2.webp";
 import linkdedin from "../../../public/linkedin2.webp";
 import cv from "../../../public/Eduardo_Treminio_FullStack_Developer.pdf";
@@ -38,11 +38,10 @@ export default function MainData() {
           </h2>
 
           <p className="mt-2 fade-inthree leading-relaxed text-center lg:text-start lg:pr-20">
-            Especializado en la creación de{" "}
-            <strong>aplicaciones web dinámicas</strong> y escalables. Apasionado
-            por el aprendizaje continuo y la
-            <strong> construcción de soluciones eficientes</strong> que aporten
-            valor real a los usuarios.
+            Diseño, desarrollo e implemento{" "}
+            <strong>soluciones informáticas eficientes y escalables</strong>
+            que impulsan la transformación digital y la eficiencia en las
+            empresas.
           </p>
 
           {/* BOTÓN + REDES */}

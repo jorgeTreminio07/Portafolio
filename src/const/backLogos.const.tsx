@@ -23,7 +23,7 @@ export const backendLogos: IBackLogoItem[] = [
 
   { name: "Sql Server", src: sqlServerLogo, alt: "Logo de Sql Server" },
 
-  { name: "MongoDB", src: mongoLogo, alt: "Logo de MongoDB" },
+  // { name: "MongoDB", src: mongoLogo, alt: "Logo de MongoDB" },
 
   { name: "Redis", src: redisLogo, alt: "Logo de Redis" },
   { name: "Supabase", src: supabaseLogo, alt: "Logo de Supabase" },
