@@ -21,6 +21,8 @@ export default function Header() {
             >
               <a
                 href="https://github.com/jorgeTreminio07/Portafolio"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="shine-text text-2xl font-sans font-bold text-[#cdcdcd]"
                 aria-label=""
               >

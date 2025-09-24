@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import MainData from "../components/mainSections/mainData";
 
 export default function ClinicSystem() {
   const navigate = useNavigate();
