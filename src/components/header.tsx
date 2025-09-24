@@ -1,5 +1,6 @@
 import { Tooltip } from "@heroui/react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,18 +31,21 @@ export default function Header() {
 
           {/* ENLACES DESKTOP */}
           <div className="hidden md:flex gap-5 text-lg font-semibold">
-            <a href="#home" className="hover:text-blue-500 underline-animate ">
+            <Link
+              to="/#home"
+              className="hover:text-blue-500 underline-animate "
+            >
               Inicio
-            </a>
-            <a href="#technologies" className="underline-animate">
+            </Link>
+            <Link to="/#technologies" className="underline-animate">
               Tecnologías
-            </a>
-            <a href="#projects" className="underline-animate">
+            </Link>
+            <Link to="/#projects" className="underline-animate">
               Proyectos
-            </a>
-            <a href="#experience" className="underline-animate">
+            </Link>
+            <Link to="/#experience" className="underline-animate">
               Experiencia
-            </a>
+            </Link>
           </div>
 
           {/* BOTÓN HAMBURGUESA */}
@@ -56,34 +60,34 @@ export default function Header() {
           {/* MENÚ MÓVIL */}
           {isOpen && (
             <div className="absolute top-full left-0 w-full h-screen gradient-burguernaver text-white flex flex-col items-center pt-10 space-y-20 text-4xl font-black md:hidden">
-              <a
-                href="#inicio"
+              <Link
+                to="/#home"
                 className="hover:text-blue-500"
                 onClick={() => setIsOpen(false)}
               >
                 Inicio
-              </a>
-              <a
-                href="#tecnologias"
+              </Link>
+              <Link
+                to="/#technologies"
                 className="hover:text-blue-500"
                 onClick={() => setIsOpen(false)}
               >
                 Tecnologías
-              </a>
-              <a
-                href="#proyectos"
+              </Link>
+              <Link
+                to="/#projects"
                 className="hover:text-blue-500"
                 onClick={() => setIsOpen(false)}
               >
                 Proyectos
-              </a>
-              <a
-                href="#experiencia"
+              </Link>
+              <Link
+                to="/#experience"
                 className="hover:text-blue-500"
                 onClick={() => setIsOpen(false)}
               >
                 Experiencia
-              </a>
+              </Link>
             </div>
           )}
         </nav>
