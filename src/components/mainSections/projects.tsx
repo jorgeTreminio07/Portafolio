@@ -16,8 +16,9 @@ export default function Projects() {
             <CardProjects
               title={project.title}
               key={index}
-              image={project.image}
+              images={project.image}
               tags={project.tags}
+              linkGitHhub={project.linkGitHhub}
             >
               {project.children}
             </CardProjects>

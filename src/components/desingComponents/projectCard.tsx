@@ -1,34 +1,99 @@
-// CardTechnologies.tsx
-import React from "react";
+// CardProjects.tsx
+import React, { useState, useEffect } from "react";
+import github from "../../../public/github2.webp";
+import { Tooltip } from "@heroui/react";
 
 interface CardProjectsProps {
   title: string;
-  image?: string;
+  images?: string[]; // ahora acepta varias imágenes
   tags?: string[];
   children?: React.ReactNode;
-  className?: string;
+  linkGitHhub?: string;
 }
 
 export default function CardProjects({
   title,
-  image,
+  images = [],
   tags = [],
   children,
+  linkGitHhub,
 }: CardProjectsProps) {
+  const [hovered, setHovered] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    let interval: number;
+
+    if (hovered && images.length > 1) {
+      interval = setInterval(() => {
+        setCurrentImage((prev) => (prev + 1) % images.length); // bucle infinito
+      }, 1200); // cambia cada 1.2 segundos
+    } else {
+      setCurrentImage(0); // vuelve a la primera imagen cuando no hay hover
+    }
+
+    return () => clearInterval(interval); // limpia el intervalo
+  }, [hovered, images]);
+
   return (
     <article
-      className="group lg:w-110 lg:h-115 col-span-2 lg:col-span-1 bg-transparent rounded-2xl p-6 border border-[#3b82f6] lg:mx-4 mt-7  hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.5)]"
+      className="group lg:w-110 lg:h-115 col-span-2 lg:col-span-1 
+                 bg-transparent rounded-2xl p-6 border border-[#3b82f6] 
+                 lg:mx-4 mt-7 hover:bg-[#2f75e616] 
+                 shadow-[0_2px_10px_rgba(63,81,181,0.5)] 
+                 flex flex-col"
       aria-labelledby={`card-${title.replace(/\s+/g, "-").toLowerCase()}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      {/* Imagen arriba */}
-      <div className="w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-800/30 flex items-center justify-center">
-        {image ? (
-          <img
-            src={image}
-            alt={title}
-            loading="lazy"
-            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
-          />
+      {/* Imagen con slideshow en bucle */}
+      <div className="w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-800/30 relative">
+        {images.length > 0 ? (
+          images.map((img, index) => (
+            <React.Fragment key={index}>
+              {/* Imagen */}
+              <img
+                src={img}
+                alt={`${title} - ${index + 1}`}
+                loading="lazy"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                  index === currentImage ? "opacity-100" : "opacity-0"
+                }`}
+              />
+
+              {/* Link "Ver más" */}
+              {hovered && (
+                <>
+                  <a
+                    href="#"
+                    className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-300 transition-colors"
+                  >
+                    Ver más…
+                  </a>
+                  <div className="absolute bottom-2 right-2">
+                    <Tooltip
+                      content="Ver Repositorio"
+                      showArrow={true}
+                      color="primary"
+                    >
+                      <a
+                        href={linkGitHhub}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Perfil de GitHub de Jorge Treminio"
+                      >
+                        <img
+                          src={github}
+                          alt="Logo de GitHub"
+                          className="bg-gradient-to-r from-blue-500 to-blue-800 w-10 h-10 rounded-full transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                        />
+                      </a>
+                    </Tooltip>
+                  </div>
+                </>
+              )}
+            </React.Fragment>
+          ))
         ) : (
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Imagen no disponible
@@ -39,18 +104,20 @@ export default function CardProjects({
       {/* Título */}
       <h2
         id={`card-${title.replace(/\s+/g, "-").toLowerCase()}`}
-        className="shine-text text-lg lg:text-2xl font-bold text-white text-center mb-3"
+        className={`text-lg lg:text-2xl font-bold text-white text-center mb-3 ${
+          hovered ? "shine-text-two" : "shine-text-nofade"
+        }`}
       >
         {title}
       </h2>
 
-      {/* Descripción (children) */}
+      {/* Descripción */}
       <div className="text-sm text-gray-200/90 mb-4 leading-relaxed">
         {children}
       </div>
 
-      {/* Tags de tecnologías */}
-      <div className="flex flex-wrap gap-2 pt-2">
+      {/* Tags */}
+      <div className="flex flex-wrap gap-2 pt-2 mt-auto">
         {tags.length > 0 ? (
           tags.map((t, i) => (
             <span
@@ -67,19 +134,3 @@ export default function CardProjects({
     </article>
   );
 }
-
-/*
-Example usage:
-
-<CardTechnologies
-  title="Gestión de Inventario"
-  image="/img/proyecto1-1.png"
-  tags={["React", "Tailwind", "Node.js", "Postgres"]}
->
-  <p>Dashboard intuitivo para controlar stock, facturación y reportes en tiempo real.</p>
-</CardTechnologies>
-
-Notes:
-- This component is TypeScript + Tailwind. Keep your custom sizes (lg:w-110, lg:h-115) if you use them in tailwind.config.
-- If you want rotating images on hover (multiple screenshots), I can extend this component to accept an array of images and change the image on hover.
-*/

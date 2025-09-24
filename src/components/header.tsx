@@ -21,7 +21,10 @@ export default function Header() {
 
           {/* ENLACES DESKTOP */}
           <div className="hidden md:flex gap-5 text-lg font-semibold">
-            <a href="#inicio" className="hover:text-blue-500 underline-animate">
+            <a
+              href="#inicio"
+              className="hover:text-blue-500 underline-animate "
+            >
               Inicio
             </a>
             <a href="#tecnologias" className="underline-animate">

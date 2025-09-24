@@ -107,6 +107,38 @@ html {
              shine 6s linear infinite 0.5s;
 }
 
+.shine-text-nofade {
+  background: linear-gradient(
+    to right,
+    #f8f8f8,
+    #f8f8f8,
+    #1655b4,
+    #f8f8f8,
+    #f8f8f8
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto; /* gradiente más largo que el texto */
+  animation: shine 5s linear infinite;
+}
+
+.shine-text-two {
+  background: linear-gradient(
+    to right,
+    #f8f8f8,
+    #f8f8f8,
+    #f1f118,
+    #f8f8f8,
+    #f8f8f8
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto; /* gradiente más largo que el texto */
+  animation: shine 5s linear infinite; /* solo el brillo */
+}
+
+
+
 @keyframes shine {
   0% {
     background-position: 200% center;

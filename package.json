@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroui/button": "^2.2.25",
     "@heroui/react": "^2.8.3",
+    "@heroui/tooltip": "^2.2.23",
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.12",
     "react": "^19.1.1",
