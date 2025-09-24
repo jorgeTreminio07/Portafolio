@@ -9,7 +9,7 @@ export default function Technologies() {
     <>
       <section
         className="text-white col-span-2 mt-44 scroll-mt-25"
-        id="tecnologias"
+        id="technologies"
       >
         <h2 className="shine-text font-bold text-3xl text-center ">
           Tecnologías

@@ -1,3 +1,4 @@
+import { Tooltip } from "@heroui/react";
 import { useState } from "react";
 
 export default function Header() {
@@ -11,29 +12,34 @@ export default function Header() {
           aria-label="Menú principal"
         >
           {/* LOGO */}
-          <a
-            href="/"
-            className="shine-text text-2xl font-sans font-bold text-[#cdcdcd]"
-            aria-label="Ir al inicio"
-          >
-            &lt;JTDev /&gt;
-          </a>
+          <div className="">
+            <Tooltip
+              content="Ver Repositorio de Portafolio"
+              showArrow={true}
+              color="primary"
+            >
+              <a
+                href="https://github.com/jorgeTreminio07/Portafolio"
+                className="shine-text text-2xl font-sans font-bold text-[#cdcdcd]"
+                aria-label=""
+              >
+                &lt;JTDev /&gt;
+              </a>
+            </Tooltip>
+          </div>
 
           {/* ENLACES DESKTOP */}
           <div className="hidden md:flex gap-5 text-lg font-semibold">
-            <a
-              href="#inicio"
-              className="hover:text-blue-500 underline-animate "
-            >
+            <a href="#home" className="hover:text-blue-500 underline-animate ">
               Inicio
             </a>
-            <a href="#tecnologias" className="underline-animate">
+            <a href="#technologies" className="underline-animate">
               Tecnologías
             </a>
-            <a href="#proyectos" className="underline-animate">
+            <a href="#projects" className="underline-animate">
               Proyectos
             </a>
-            <a href="#experiencia" className="underline-animate">
+            <a href="#experience" className="underline-animate">
               Experiencia
             </a>
           </div>

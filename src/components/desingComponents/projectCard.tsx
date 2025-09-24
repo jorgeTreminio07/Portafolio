@@ -9,6 +9,8 @@ interface CardProjectsProps {
   tags?: string[];
   children?: React.ReactNode;
   linkGitHhub?: string;
+  viewMore?: string;
+  logoGitHub?: boolean;
 }
 
 export default function CardProjects({
@@ -17,6 +19,8 @@ export default function CardProjects({
   tags = [],
   children,
   linkGitHhub,
+  viewMore,
+  logoGitHub,
 }: CardProjectsProps) {
   const [hovered, setHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -40,7 +44,7 @@ export default function CardProjects({
       className="group lg:w-110 lg:h-115 col-span-2 lg:col-span-1 
                  bg-transparent rounded-2xl p-6 border border-[#3b82f6] 
                  lg:mx-4 mt-7 hover:bg-[#2f75e616] 
-                 shadow-[0_2px_10px_rgba(63,81,181,0.5)] 
+                 shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]
                  flex flex-col"
       aria-labelledby={`card-${title.replace(/\s+/g, "-").toLowerCase()}`}
       onMouseEnter={() => setHovered(true)}
@@ -60,44 +64,48 @@ export default function CardProjects({
                   index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
               />
-
-              {/* Link "Ver más" */}
-              {hovered && (
-                <>
-                  <a
-                    href="#"
-                    className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-300 transition-colors"
-                  >
-                    Ver más…
-                  </a>
-                  <div className="absolute bottom-2 right-2">
-                    <Tooltip
-                      content="Ver Repositorio"
-                      showArrow={true}
-                      color="primary"
-                    >
-                      <a
-                        href={linkGitHhub}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Perfil de GitHub de Jorge Treminio"
-                      >
-                        <img
-                          src={github}
-                          alt="Logo de GitHub"
-                          className="bg-gradient-to-r from-blue-500 to-blue-800 w-10 h-10 rounded-full transform transition-transform duration-300 hover:scale-110 cursor-pointer"
-                        />
-                      </a>
-                    </Tooltip>
-                  </div>
-                </>
-              )}
             </React.Fragment>
           ))
         ) : (
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             Imagen no disponible
           </div>
+        )}
+
+        {/* Link "Ver más y github" */}
+        {hovered && (
+          <>
+            <a
+              href={viewMore ?? "#"}
+              target={logoGitHub ? "" : "_blank"}
+              rel={logoGitHub ? "" : "noopener noreferrer"}
+              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
+            >
+              Ver más…
+            </a>
+            {logoGitHub && (
+              <div className="absolute bottom-2 right-2">
+                <Tooltip
+                  content="Ver Repositorio"
+                  showArrow={true}
+                  color="primary"
+                >
+                  <a
+                    href={linkGitHhub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Perfil de GitHub de Jorge Treminio"
+                  >
+                    <img
+                      src={github}
+                      alt="Logo de GitHub"
+                      className="bg-gradient-to-r from-blue-500 to-blue-800 w-10 h-10 rounded-full transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                    />
+                  </a>
+                </Tooltip>
+              </div>
+            )}
+          </>
         )}
       </div>
 

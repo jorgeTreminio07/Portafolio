@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface CardTechnologiesProps {
   title: string;
   children: React.ReactNode;
@@ -6,11 +8,21 @@ export default function CardTechnologies({
   title,
   children,
 }: CardTechnologiesProps) {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <>
       {/* CARD */}
-      <div className="lg:w-110 lg:h-110 col-span-2 lg:col-span-1 bg-trasparent rounded-2xl p-6 border border-[#3b82f6] lg:mx-4 mt-7 transform transition-transform duration-300 hover:scale-105 hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.5)]">
-        <h2 className="shine-text text-2xl font-bold text-white text-center">
+      <div
+        className="lg:w-110 lg:h-110 col-span-2 lg:col-span-1 bg-trasparent rounded-2xl p-6 border border-[#3b82f6] lg:mx-4 mt-7 transform transition-transform duration-300 hover:scale-105 hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,1)]"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <h2
+          className={`text-2xl font-bold text-white text-center ${
+            hovered ? "shine-text-two" : "shine-text-nofade"
+          }`}
+        >
           {title}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">

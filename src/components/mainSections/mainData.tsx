@@ -12,7 +12,7 @@ export default function MainData() {
         {/* AVATAR */}
         <aside
           className="mb-6 lg:mb-0 lg:mr-10 order-first lg:order-last flex-shrink-0 mt-30 lg:mt-0 scroll-mt-70"
-          id="inicio"
+          id="home"
         >
           <div className="relative w-64 h-64 rounded-full">
             <div className="absolute inset-0 rounded-full bg-[#1655b4] blur-lg float-fade"></div>

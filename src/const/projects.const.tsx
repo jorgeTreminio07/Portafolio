@@ -2,8 +2,9 @@ interface CardProjectsProps {
   title: string;
   image?: string[];
   tags?: string[];
-  ruta?: string;
+  viewMore?: string;
   linkGitHhub?: string;
+  logoGitHub?: boolean;
   children?: React.ReactNode;
 }
 
@@ -32,6 +33,7 @@ export const projectsData: CardProjectsProps[] = [
       </p>
     ),
     linkGitHhub: "https://github.com/jorgeTreminio07/clinic_system",
+    viewMore: "/clinicSystem",
   },
   {
     title: "API Clean Arquitecture Asp.net Core",
@@ -57,6 +59,7 @@ export const projectsData: CardProjectsProps[] = [
       </p>
     ),
     linkGitHhub: "https://github.com/jorgeTreminio07/Clean_Architecture",
+    viewMore: "/cleanArchitecture",
   },
   {
     title: "Perez Mcgill Law Firm",
@@ -73,7 +76,8 @@ export const projectsData: CardProjectsProps[] = [
         una experiencia de usuario profesional.
       </p>
     ),
-    linkGitHhub: "https://perezmcgilllaw.com/",
+    viewMore: "https://perezmcgilllaw.com/",
+    logoGitHub: false,
   },
   {
     title: "Sistema de Notas INATEC",
@@ -91,5 +95,6 @@ export const projectsData: CardProjectsProps[] = [
       </p>
     ),
     linkGitHhub: "https://github.com/jorgeTreminio07/sistema-de-notas",
+    viewMore: "/NotesSystem",
   },
 ];
