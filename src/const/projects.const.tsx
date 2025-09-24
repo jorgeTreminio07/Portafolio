@@ -34,7 +34,7 @@ export const projectsData: CardProjectsProps[] = [
     linkGitHhub: "https://github.com/jorgeTreminio07/clinic_system",
   },
   {
-    title: "Clean Arquitecture Asp.net Core",
+    title: "API Clean Arquitecture Asp.net Core",
     image: [
       "../../public/xd/xd.jpg",
       "/img/proyecto1-2.png",
