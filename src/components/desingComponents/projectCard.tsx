@@ -41,7 +41,7 @@ export default function CardProjects({
 
   return (
     <article
-      className="group lg:w-110 lg:h-115 col-span-2 lg:col-span-1 
+      className="group lg:w-120 lg:h-115 col-span-2 lg:col-span-1 
                  bg-transparent rounded-2xl p-6 border border-[#3b82f6] 
                  lg:mx-4 mt-7 hover:bg-[#2f75e616] 
                  shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]
@@ -60,7 +60,7 @@ export default function CardProjects({
                 src={img}
                 alt={`${title} - ${index + 1}`}
                 loading="lazy"
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
                   index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
               />

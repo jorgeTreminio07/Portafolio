@@ -1,3 +1,5 @@
+import loginClinic from "../../public/ClinicSystemImages/login.png";
+
 interface CardProjectsProps {
   title: string;
   image?: string[];
@@ -12,9 +14,15 @@ export const projectsData: CardProjectsProps[] = [
   {
     title: "Sistema de Registro y Control de Expedientes Clínicos",
     image: [
-      "../../public/xd/xd.jpg",
-      "../../public/xd/xd2.png",
-      "/img/proyecto1-3.png",
+      "../../public/ClinicSystemImages/login.webp",
+      "../../public/ClinicSystemImages/dashboard.png",
+      "../../public/ClinicSystemImages/expedientes.png",
+      "../../public/ClinicSystemImages/modal.png",
+      "../../public/ClinicSystemImages/resportes.png",
+      "../../public/ClinicSystemImages/backups.png",
+      "../../public/ClinicSystemImages/consultas.png",
+      "../../public/ClinicSystemImages/userForm.png",
+      "../../public/ClinicSystemImages/Swagger.png",
     ],
     tags: [
       "Vite",
