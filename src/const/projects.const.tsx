@@ -1,4 +1,4 @@
-import loginClinic from "../../public/ClinicSystemImages/login.png";
+import loginClinic from "../../public/cleanAchitecture/office.png";
 
 interface CardProjectsProps {
   title: string;
@@ -40,15 +40,17 @@ export const projectsData: CardProjectsProps[] = [
         general.
       </p>
     ),
-    linkGitHhub: "https://github.com/jorgeTreminio07/clinic_system",
+    linkGitHhub: "https://github.com/jorgeTreminio07/Clinic_System_",
     viewMore: "/clinicSystem",
   },
   {
-    title: "API Clean Arquitecture Asp.net Core",
+    title: "Web API Clean Arquitecture Asp.net Core",
     image: [
-      "../../public/xd/xd.jpg",
-      "/img/proyecto1-2.png",
-      "/img/proyecto1-3.png",
+      "../../public/cleanAchitecture/Auth.png",
+      "../../public/cleanAchitecture/postman.png",
+      "../../public/cleanAchitecture/backup.png",
+      "../../public/cleanAchitecture/employees.png",
+      "../../public/cleanAchitecture/office.png",
     ],
     tags: [
       "Clean Architecture",
@@ -90,9 +92,13 @@ export const projectsData: CardProjectsProps[] = [
   {
     title: "Sistema de Notas INATEC",
     image: [
-      "/img/proyecto1-1.png",
-      "/img/proyecto1-2.png",
-      "/img/proyecto1-3.png",
+      "../../public/NotesSystem/login.png",
+      "../../public/NotesSystem/inicio.png",
+      "../../public/NotesSystem/registrodealumnos.png",
+      "../../public/NotesSystem/listadodealumnos.png",
+      "../../public/NotesSystem/registrodenotas.png",
+      "../../public/NotesSystem/formularioregitronotas.png",
+      "../../public/NotesSystem/consultadenotas.png",
     ],
     tags: ["Php", "Boostrap", "Mysql", "Xampp"],
     children: (

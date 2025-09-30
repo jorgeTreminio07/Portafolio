@@ -5,7 +5,7 @@ import { Tooltip } from "@heroui/react";
 
 interface CardProjectsProps {
   title: string;
-  images?: string[]; // ahora acepta varias imágenes
+  images?: string[];
   tags?: string[];
   children?: React.ReactNode;
   linkGitHhub?: string;
@@ -81,7 +81,7 @@ export default function CardProjects({
               rel={logoGitHub ? "" : "noopener noreferrer"}
               className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
             >
-              Ver más…
+              Ver más info…
             </a>
             {logoGitHub && (
               <div className="absolute bottom-2 right-2">

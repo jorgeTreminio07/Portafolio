@@ -39,7 +39,7 @@ export default function MainData() {
 
           <p className="mt-2 fade-inthree leading-relaxed text-center lg:text-start lg:pr-20">
             Diseño, desarrollo e implemento{" "}
-            <strong>soluciones informáticas eficientes y escalables</strong>
+            <strong>soluciones informáticas eficientes y escalables </strong>
             que impulsan la transformación digital y la eficiencia en las
             empresas.
           </p>
