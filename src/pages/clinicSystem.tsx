@@ -24,9 +24,9 @@ export default function ClinicSystem() {
       images={images}
       gitHublink="https://github.com/jorgeTreminio07/Clinic_System_"
     >
-      <div className="p-6 grid gap-6 grid-cols-1 lg:grid-cols-2">
+      <div className="p-6 grid gap-6 grid-cols-1 md:grid-cols-2">
         {/* Backend Features */}
-        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)] col-span-2">
+        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)] md:col-span-2">
           <h2 className="text-xl font-bold mb-4 shine-text-nofade">
             Funcionalidades Backend
           </h2>

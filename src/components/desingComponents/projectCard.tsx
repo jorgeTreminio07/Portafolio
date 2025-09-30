@@ -24,6 +24,7 @@ export default function CardProjects({
 }: CardProjectsProps) {
   const [hovered, setHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+  const [isDesktop, setIsDesktop] = useState<boolean>(window.innerWidth >= 768);
 
   useEffect(() => {
     let interval: number;
@@ -38,6 +39,17 @@ export default function CardProjects({
 
     return () => clearInterval(interval); // limpia el intervalo
   }, [hovered, images]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768); // md breakpoint = 768px
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <article
@@ -72,24 +84,48 @@ export default function CardProjects({
           </div>
         )}
 
-        {/* Link "Ver más y github" */}
-        {hovered && (
+        {/* Solo hover en escritorio */}
+        {isDesktop && hovered && (
           <>
             <a
               href={viewMore ?? "#"}
-              target={logoGitHub ? "" : "_blank"}
-              rel={logoGitHub ? "" : "noopener noreferrer"}
               className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
             >
               Ver más info…
             </a>
             {logoGitHub && (
               <div className="absolute bottom-2 right-2">
-                <Tooltip
-                  content="Ver Repositorio"
-                  showArrow={true}
-                  color="primary"
-                >
+                <Tooltip content="Ver Repositorio" showArrow color="primary">
+                  <a
+                    href={linkGitHhub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Perfil de GitHub de Jorge Treminio"
+                  >
+                    <img
+                      src={github}
+                      alt="Logo de GitHub"
+                      className="bg-gradient-to-r from-blue-500 to-blue-800 w-10 h-10 rounded-full transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                    />
+                  </a>
+                </Tooltip>
+              </div>
+            )}
+          </>
+        )}
+
+        {/* Siempre visible en tablet/móvil */}
+        {!isDesktop && (
+          <>
+            <a
+              href={viewMore ?? "#"}
+              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
+            >
+              Ver más info…
+            </a>
+            {logoGitHub && (
+              <div className="absolute bottom-2 right-2">
+                <Tooltip content="Ver Repositorio" showArrow color="primary">
                   <a
                     href={linkGitHhub}
                     target="_blank"

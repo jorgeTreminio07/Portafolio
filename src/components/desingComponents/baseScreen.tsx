@@ -1,7 +1,5 @@
-import { Button } from "@heroui/button";
 import { useState } from "react";
 import github from "../../../public/github2.webp";
-import linkdedin from "../../../public/linkedin2.webp";
 import { CiCalendarDate } from "react-icons/ci";
 import { Tooltip } from "@heroui/react";
 // import { useNavigate } from "react-router-dom";
@@ -35,7 +33,7 @@ export default function BaseScreen({
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 mx-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-20 mx-20">
         <div className="col-span-2 flex flex-col items-center text-center">
           <h1 className="shine-text-nofade fade-in font-bold text-3xl mb-2">
             {title}

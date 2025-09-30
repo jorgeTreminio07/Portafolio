@@ -1,5 +1,3 @@
-import loginClinic from "../../public/cleanAchitecture/office.png";
-
 interface CardProjectsProps {
   title: string;
   image?: string[];
