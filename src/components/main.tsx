@@ -1,3 +1,4 @@
+import Certificates from "./mainSections/certificates";
 import MainData from "./mainSections/mainData";
 import Projects from "./mainSections/projects";
 import Technologies from "./mainSections/technologies";
@@ -9,6 +10,7 @@ export default function Main() {
         <MainData />
         <Technologies />
         <Projects />
+        <Certificates />
       </main>
     </>
   );
