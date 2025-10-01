@@ -1,7 +1,9 @@
 import { useState } from "react";
 import github from "../../../public/github2.webp";
 import { CiCalendarDate } from "react-icons/ci";
-import { Tooltip } from "@heroui/react";
+import { Button, Tooltip } from "@heroui/react";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 interface CardProjectsProps {
@@ -10,6 +12,7 @@ interface CardProjectsProps {
   images: string[];
   gitHublink?: string;
   children: React.ReactNode;
+  date: string;
 }
 
 export default function BaseScreen({
@@ -18,8 +21,9 @@ export default function BaseScreen({
   description,
   images,
   gitHublink,
+  date,
 }: CardProjectsProps) {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,13 +39,22 @@ export default function BaseScreen({
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-20 mx-20">
         <div className="col-span-2 flex flex-col items-center text-center">
+          <Tooltip content="Atrás" showArrow={true} color="primary">
+            <Button
+              color="default"
+              className="absolute top-20 left-5 fade-intwo"
+              onPress={() => navigate(-1)}
+            >
+              <IoMdArrowRoundBack />
+            </Button>
+          </Tooltip>
           <h1 className="shine-text-nofade fade-in font-bold text-3xl mb-2">
             {title}
           </h1>
           <p className="mb-8 fade-intwo">{description}</p>
           <div className="flex flex-row items-center justify-center lg:justify-start space-x-3 mb-5 fade-intwo">
             <CiCalendarDate size={30} />
-            <p className="font-semibold">29-11-24 </p>
+            <p className="font-semibold">{date}</p>
 
             <div className="">
               <Tooltip

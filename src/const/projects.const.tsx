@@ -42,7 +42,7 @@ export const projectsData: CardProjectsProps[] = [
     viewMore: "/clinicSystem",
   },
   {
-    title: "Web API Clean Arquitecture Asp.net Core",
+    title: "Web API Clean Architecture Asp.net Core 9",
     image: [
       "../../public/cleanAchitecture/Auth.png",
       "../../public/cleanAchitecture/postman.png",
@@ -88,7 +88,7 @@ export const projectsData: CardProjectsProps[] = [
     logoGitHub: false,
   },
   {
-    title: "Sistema de Notas INATEC",
+    title: "Sistema de Notas INATEC V1.0",
     image: [
       "../../public/NotesSystem/login.png",
       "../../public/NotesSystem/inicio.png",
@@ -102,8 +102,8 @@ export const projectsData: CardProjectsProps[] = [
     children: (
       <p>
         Plataforma web para la gestión académica en INATEC, que permite
-        registrar y administrar las notas de los estudiantes de manera Segura y
-        eficiente.
+        registrar y administrar las notas de los estudiantes facilitar el
+        seguimiento del desempeño estudiantil.
       </p>
     ),
     linkGitHhub: "https://github.com/jorgeTreminio07/sistema-de-notas",

@@ -22,6 +22,7 @@ export default function ClinicSystem() {
       asegurando integridad de los datos y accesibilidad
       rápida para el personal autorizado."
       images={images}
+      date="29/11/2024"
       gitHublink="https://github.com/jorgeTreminio07/Clinic_System_"
     >
       <div className="p-6 grid gap-6 grid-cols-1 md:grid-cols-2">
@@ -41,6 +42,7 @@ export default function ClinicSystem() {
               "Gestión de Caché",
               "Soporte CORS",
               "Almacenamiento de Archivos",
+              "Borrado Logico",
             ].map((tag, i) => (
               <span
                 key={i}
