@@ -27,12 +27,6 @@ export const certificates: ICertificateItem[] = [
   },
   {
     logo: "../../public/certificate/udemylogo.png",
-    tittle: "Desarrollo APIs RESTFUL con ASP.NET Core 9",
-    date: "2025",
-    institution: "Udemy",
-  },
-  {
-    logo: "../../public/certificate/udemylogo.png",
     tittle: "Diseño de Sistemas a Gran Escala",
     date: "2025",
     institution: "Udemy",

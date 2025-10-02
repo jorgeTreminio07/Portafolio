@@ -114,6 +114,7 @@ export default function ClinicSystem() {
               "Ardalis.Result",
               "Ardalis.Specification",
               "Bcrypt",
+              "Swagger",
             ].map((tag, i) => (
               <span
                 key={i}

@@ -37,18 +37,18 @@ export default function BaseScreen({
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-20 mx-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-20 mx-4 md:mx-20">
         <div className="col-span-2 flex flex-col items-center text-center">
           <Tooltip content="Atrás" showArrow={true} color="primary">
             <Button
               color="default"
-              className="absolute top-20 left-5 fade-intwo"
+              className="absolute top-25 left-5 md:top-20 fade-intwo"
               onPress={() => navigate(-1)}
             >
               <IoMdArrowRoundBack />
             </Button>
           </Tooltip>
-          <h1 className="shine-text-nofade fade-in font-bold text-3xl mb-2">
+          <h1 className="shine-text-nofade fade-in font-bold text-3xl mb-2 mt-10 md:mt-0">
             {title}
           </h1>
           <p className="mb-8 fade-intwo">{description}</p>
@@ -100,7 +100,12 @@ export default function BaseScreen({
                       key={index}
                       src={img}
                       alt={`Slide ${index}`}
-                      className="w-full h-full object-contain flex-shrink-0"
+                      className="
+              w-full flex-shrink-0
+              h-64 sm:h-[400px] md:h-[500px]   /* Ajuste de alto según pantalla */
+              object-cover sm:object-contain 
+              rounded-4xl /* En móvil se ve grande, en pantallas grandes mantiene proporción */
+            "
                     />
                   ))}
                 </div>

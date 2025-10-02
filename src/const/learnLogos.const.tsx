@@ -1,6 +1,4 @@
-import angularLogo from "../assets/aprendiendo/angular.svg";
 import nextjsLogo from "../assets/aprendiendo/nextjs.svg";
-import djangoLogo from "../assets/aprendiendo/django.svg";
 import springBootLogo from "../assets/aprendiendo/SpringBoot.svg";
 import awsLogo from "../assets/aprendiendo/aws.svg";
 

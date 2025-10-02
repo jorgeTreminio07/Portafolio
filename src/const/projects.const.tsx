@@ -69,24 +69,24 @@ export const projectsData: CardProjectsProps[] = [
     linkGitHhub: "https://github.com/jorgeTreminio07/Clean_Architecture",
     viewMore: "/cleanArchitecture",
   },
-  {
-    title: "Perez Mcgill Law Firm",
-    image: [
-      "/img/proyecto1-1.png",
-      "/img/proyecto1-2.png",
-      "/img/proyecto1-3.png",
-    ],
-    tags: ["WordPress", "Astra", "Css", "Html"],
-    children: (
-      <p>
-        Sitio web corporativo desarrollado para una firma de abogados en Estados
-        Unidos, con un diseño elegante, estructura optimizada para clientes y
-        una experiencia de usuario profesional.
-      </p>
-    ),
-    viewMore: "https://perezmcgilllaw.com/",
-    logoGitHub: false,
-  },
+  // {
+  //   title: "Perez Mcgill Law Firm",
+  //   image: [
+  //     "/img/page_in_constrution.png",
+  //     "/img/page_in_constrution2.png",
+  //     "/img/page_in_constrution3.png",
+  //   ],
+  //   tags: ["WordPress", "Astra", "Css", "Html"],
+  //   children: (
+  //     <p>
+  //       Sitio web corporativo desarrollado para una firma de abogados en Estados
+  //       Unidos, con un diseño elegante, estructura optimizada para clientes y
+  //       una experiencia de usuario profesional.
+  //     </p>
+  //   ),
+  //   viewMore: "https://perezmcgilllaw.com/",
+  //   logoGitHub: false,
+  // },
   {
     title: "Sistema de Notas INATEC V1.0",
     image: [

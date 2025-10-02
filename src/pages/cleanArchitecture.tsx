@@ -22,7 +22,7 @@ export default function CleanArchitecture() {
     >
       <div className="p-6 grid gap-6 grid-cols-2">
         {/* Backend Features */}
-        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
+        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)] col-span-2 lg:col-span-1">
           <h2 className="text-xl font-bold mb-4 shine-text-nofade">
             Funcionalidades Backend
           </h2>
@@ -50,7 +50,7 @@ export default function CleanArchitecture() {
         </div>
 
         {/* Design Patterns */}
-        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
+        <div className="col-span-2 lg:col-span-1 p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
           <h2 className="text-xl font-bold mb-4 shine-text-nofade">
             Patrones de Diseño Aplicados
           </h2>
@@ -73,7 +73,7 @@ export default function CleanArchitecture() {
         </div>
 
         {/* Librerías */}
-        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
+        <div className="col-span-2 lg:col-span-1 p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
           <h2 className="text-xl font-bold mb-4 shine-text-nofade">
             Librerías
           </h2>
@@ -84,6 +84,7 @@ export default function CleanArchitecture() {
               "Ardalis.Result",
               "Ardalis.Specification",
               "Bcrypt",
+              "Swagger",
             ].map((tag, i) => (
               <span
                 key={i}
@@ -96,7 +97,7 @@ export default function CleanArchitecture() {
         </div>
 
         {/* Base de Datos */}
-        <div className="p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
+        <div className="col-span-2 lg:col-span-1 p-4 rounded-2xl border-[#3b82f6] hover:bg-[#2f75e616] shadow-[0_2px_10px_rgba(63,81,181,0.3)] hover:shadow-[0_2px_10px_rgba(63,81,181,0.9)]">
           <h2 className="text-xl font-bold mb-4 shine-text-nofade">
             Base de Datos
           </h2>

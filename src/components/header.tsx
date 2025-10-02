@@ -45,6 +45,9 @@ export default function Header() {
             <Link to="/#projects" className="underline-animate">
               Proyectos
             </Link>
+            <Link to="/#experience" className="underline-animate">
+              Experiencia
+            </Link>
             <Link to="/#certificates" className="underline-animate">
               Estudios
             </Link>
@@ -82,6 +85,13 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 Proyectos
+              </Link>
+              <Link
+                to="/#experience"
+                className="hover:text-blue-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Experiencia
               </Link>
               <Link
                 to="/#certificates"
