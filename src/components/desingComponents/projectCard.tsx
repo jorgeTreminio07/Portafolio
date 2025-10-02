@@ -42,7 +42,7 @@ export default function CardProjects({
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768); // md breakpoint = 768px
+      setIsDesktop(window.innerWidth >= 1000); // md breakpoint = 768px
     };
 
     window.addEventListener("resize", handleResize);
