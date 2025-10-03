@@ -15,8 +15,8 @@ export const certificates: ICertificateItem[] = [
   },
   {
     logo: "../../public/certificate/inateclogo.jpg",
-    tittle: "English B1",
-    date: "2023",
+    tittle: "English A2",
+    date: "2022",
     institution: "Instituto Nacional Tecnologico",
   },
   {

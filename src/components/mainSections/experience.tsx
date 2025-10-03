@@ -13,14 +13,16 @@ export default function Experience() {
           {/* Experiencia Freelance */}
           <div className="bg-gray-800/50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xl font-semibold">Freelance</h3>
+              <h3 className="text-xl font-semibold">
+                Desarrollador Fullstack Independiente
+              </h3>
               <span className="text-gray-400 italic text-sm">
                 Feb 2024 - Actualidad
               </span>
             </div>
 
             <p className="text-gray-300 italic mb-4">
-              Desarrollador Fullstack - .Net, React + Typescript, SQL
+              .Net, React + Typescript, SQL
             </p>
 
             <p className="text-gray-200 mb-3">
