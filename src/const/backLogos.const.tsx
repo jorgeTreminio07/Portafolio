@@ -1,7 +1,6 @@
 import netcoreLogo from "../assets/backend/netcore.svg";
 import laravelLogo from "../assets/backend/laravel.svg";
 import mysqlLogo from "../assets/backend/mysql.svg";
-import mongoLogo from "../assets/backend/mongodb.svg";
 import postgresLogo from "../assets/backend/postgre.svg";
 import redisLogo from "../assets/backend/redis.svg";
 import sqlServerLogo from "../assets/backend/sqlserver.svg";
