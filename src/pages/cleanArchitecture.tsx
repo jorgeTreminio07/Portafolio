@@ -1,13 +1,12 @@
 import BaseScreen from "../components/desingComponents/baseScreen";
+import authImg from "../../public/cleanAchitecture/Auth.png";
+import postmanImg from "../../public/cleanAchitecture/postman.png";
+import backupImg from "../../public/cleanAchitecture/backup.png";
+import employeesImg from "../../public/cleanAchitecture/employees.png";
+import officeImg from "../../public/cleanAchitecture/office.png";
 
 export default function CleanArchitecture() {
-  const images = [
-    "../../public/cleanAchitecture/Auth.png",
-    "../../public/cleanAchitecture/postman.png",
-    "../../public/cleanAchitecture/backup.png",
-    "../../public/cleanAchitecture/employees.png",
-    "../../public/cleanAchitecture/office.png",
-  ];
+  const images = [authImg, postmanImg, backupImg, employeesImg, officeImg];
   return (
     <BaseScreen
       title="Web API Clean Architecture Asp.net Core 9"

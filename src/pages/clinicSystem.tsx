@@ -1,16 +1,25 @@
 import BaseScreen from "../components/desingComponents/baseScreen";
+import loginClinic from "../../public/ClinicSystemImages/login.webp";
+import dashboardImg from "../../public/ClinicSystemImages/dashboard.png";
+import expedientesImg from "../../public/ClinicSystemImages/expedientes.png";
+import modalImg from "../../public/ClinicSystemImages/modal.png";
+import resportesImg from "../../public/ClinicSystemImages/resportes.png";
+import backupsImg from "../../public/ClinicSystemImages/backups.png";
+import consultasImg from "../../public/ClinicSystemImages/consultas.png";
+import userFormImg from "../../public/ClinicSystemImages/userForm.png";
+import swaggerImg from "../../public/ClinicSystemImages/Swagger.png";
 
 export default function ClinicSystem() {
   const images = [
-    "../../public/ClinicSystemImages/login.webp",
-    "../../public/ClinicSystemImages/dashboard.png",
-    "../../public/ClinicSystemImages/expedientes.png",
-    "../../public/ClinicSystemImages/modal.png",
-    "../../public/ClinicSystemImages/resportes.png",
-    "../../public/ClinicSystemImages/backups.png",
-    "../../public/ClinicSystemImages/consultas.png",
-    "../../public/ClinicSystemImages/userForm.png",
-    "../../public/ClinicSystemImages/Swagger.png",
+    loginClinic,
+    dashboardImg,
+    expedientesImg,
+    modalImg,
+    resportesImg,
+    backupsImg,
+    consultasImg,
+    userFormImg,
+    swaggerImg,
   ];
   return (
     <BaseScreen

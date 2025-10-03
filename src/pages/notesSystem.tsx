@@ -1,14 +1,21 @@
 import BaseScreen from "../components/desingComponents/baseScreen";
+import notesLogin from "../../public/NotesSystem/login.png";
+import notesInicio from "../../public/NotesSystem/inicio.png";
+import notesRegistroAlumnos from "../../public/NotesSystem/registrodealumnos.png";
+import notesListadoAlumnos from "../../public/NotesSystem/listadodealumnos.png";
+import notesRegistroNotas from "../../public/NotesSystem/registrodenotas.png";
+import notesFormularioRegistroNotas from "../../public/NotesSystem/formularioregitronotas.png";
+import notesConsultaNotas from "../../public/NotesSystem/consultadenotas.png";
 
 export default function NotesSystem() {
   const images = [
-    "../../public/NotesSystem/login.png",
-    "../../public/NotesSystem/inicio.png",
-    "../../public/NotesSystem/registrodealumnos.png",
-    "../../public/NotesSystem/listadodealumnos.png",
-    "../../public/NotesSystem/registrodenotas.png",
-    "../../public/NotesSystem/formularioregitronotas.png",
-    "../../public/NotesSystem/consultadenotas.png",
+    notesLogin,
+    notesInicio,
+    notesRegistroAlumnos,
+    notesListadoAlumnos,
+    notesRegistroNotas,
+    notesFormularioRegistroNotas,
+    notesConsultaNotas,
   ];
   return (
     <BaseScreen

@@ -1,3 +1,25 @@
+import loginClinic from "../../public/ClinicSystemImages/login.webp";
+import dashboardImg from "../../public/ClinicSystemImages/dashboard.png";
+import expedientesImg from "../../public/ClinicSystemImages/expedientes.png";
+import modalImg from "../../public/ClinicSystemImages/modal.png";
+import resportesImg from "../../public/ClinicSystemImages/resportes.png";
+import backupsImg from "../../public/ClinicSystemImages/backups.png";
+import consultasImg from "../../public/ClinicSystemImages/consultas.png";
+import userFormImg from "../../public/ClinicSystemImages/userForm.png";
+import swaggerImg from "../../public/ClinicSystemImages/Swagger.png";
+import authImg from "../../public/cleanAchitecture/Auth.png";
+import postmanImg from "../../public/cleanAchitecture/postman.png";
+import backupImg from "../../public/cleanAchitecture/backup.png";
+import employeesImg from "../../public/cleanAchitecture/employees.png";
+import officeImg from "../../public/cleanAchitecture/office.png";
+import notesLogin from "../../public/NotesSystem/login.png";
+import notesInicio from "../../public/NotesSystem/inicio.png";
+import notesRegistroAlumnos from "../../public/NotesSystem/registrodealumnos.png";
+import notesListadoAlumnos from "../../public/NotesSystem/listadodealumnos.png";
+import notesRegistroNotas from "../../public/NotesSystem/registrodenotas.png";
+import notesFormularioRegistroNotas from "../../public/NotesSystem/formularioregitronotas.png";
+import notesConsultaNotas from "../../public/NotesSystem/consultadenotas.png";
+
 interface CardProjectsProps {
   title: string;
   image?: string[];
@@ -12,15 +34,15 @@ export const projectsData: CardProjectsProps[] = [
   {
     title: "Sistema de Registro y Control de Expedientes Clínicos",
     image: [
-      "../../public/ClinicSystemImages/login.webp",
-      "../../public/ClinicSystemImages/dashboard.png",
-      "../../public/ClinicSystemImages/expedientes.png",
-      "../../public/ClinicSystemImages/modal.png",
-      "../../public/ClinicSystemImages/resportes.png",
-      "../../public/ClinicSystemImages/backups.png",
-      "../../public/ClinicSystemImages/consultas.png",
-      "../../public/ClinicSystemImages/userForm.png",
-      "../../public/ClinicSystemImages/Swagger.png",
+      loginClinic,
+      dashboardImg,
+      expedientesImg,
+      modalImg,
+      resportesImg,
+      backupsImg,
+      consultasImg,
+      userFormImg,
+      swaggerImg,
     ],
     tags: [
       "Vite",
@@ -43,13 +65,7 @@ export const projectsData: CardProjectsProps[] = [
   },
   {
     title: "Web API Clean Architecture Asp.net Core 9",
-    image: [
-      "../../public/cleanAchitecture/Auth.png",
-      "../../public/cleanAchitecture/postman.png",
-      "../../public/cleanAchitecture/backup.png",
-      "../../public/cleanAchitecture/employees.png",
-      "../../public/cleanAchitecture/office.png",
-    ],
+    image: [authImg, postmanImg, backupImg, employeesImg, officeImg],
     tags: [
       "Clean Architecture",
       "Asp.Net core",
@@ -90,13 +106,13 @@ export const projectsData: CardProjectsProps[] = [
   {
     title: "Sistema de Notas INATEC V1.0",
     image: [
-      "../../public/NotesSystem/login.png",
-      "../../public/NotesSystem/inicio.png",
-      "../../public/NotesSystem/registrodealumnos.png",
-      "../../public/NotesSystem/listadodealumnos.png",
-      "../../public/NotesSystem/registrodenotas.png",
-      "../../public/NotesSystem/formularioregitronotas.png",
-      "../../public/NotesSystem/consultadenotas.png",
+      notesLogin,
+      notesInicio,
+      notesRegistroAlumnos,
+      notesListadoAlumnos,
+      notesRegistroNotas,
+      notesFormularioRegistroNotas,
+      notesConsultaNotas,
     ],
     tags: ["Php", "Boostrap", "Mysql", "Xampp"],
     children: (
