@@ -1,4 +1,4 @@
-import{j as e,l as d,d as o,e as i,m as t,r as n,b as l,c,u as x,s as p}from"./index-BOwqGRHq.js";import{B as m}from"./baseScreen-CFzn5_dc.js";function u(){const s=[d,o,i,t,n,l,c,x,p];return e.jsx(m,{title:"Sistema de Registro y Control de Expedientes Clínicos",description:`Aplicación full-stack diseñada para optimizar\r
+import{j as e,l as d,d as o,e as i,m as t,r as n,b as l,c,u as x,s as p}from"./index-DHLPUw3A.js";import{B as m}from"./baseScreen-u-A63eCw.js";function u(){const s=[d,o,i,t,n,l,c,x,p];return e.jsx(m,{title:"Sistema de Registro y Control de Expedientes Clínicos",description:`Aplicación full-stack diseñada para optimizar\r
       la gestión de la información médica en clínicas y centros\r
       de salud. Permite registrar, organizar y consultar\r
       expedientes clínicos de forma segura y eficiente,\r
