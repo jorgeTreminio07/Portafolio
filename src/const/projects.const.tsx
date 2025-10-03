@@ -102,7 +102,7 @@ export const projectsData: CardProjectsProps[] = [
     children: (
       <p>
         Plataforma web para la gestión académica en INATEC, que permite
-        registrar y administrar las notas de los estudiantes facilitar el
+        registrar y administrar las notas de los estudiantes y facilitar el
         seguimiento del desempeño estudiantil.
       </p>
     ),

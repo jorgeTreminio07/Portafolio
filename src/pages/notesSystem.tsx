@@ -14,7 +14,7 @@ export default function NotesSystem() {
     <BaseScreen
       title="Sistema de Notas INATEC V1.0"
       description="Mini proyecto personal como estudiante de Ingeniería en Sistemas. Plataforma web para la gestión académica en INATEC, que permite
-        registrar y administrar las notas de los estudiantes facilitar el
+        registrar y administrar las notas de los estudiantes y facilitar el
         seguimiento del desempeño estudiantil."
       images={images}
       date="20/01/2022"
