@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import github from "../../../public/github2.webp";
 import { Tooltip } from "@heroui/react";
+import { Link } from "react-router-dom";
 
 interface CardProjectsProps {
   title: string;
@@ -87,12 +88,12 @@ export default function CardProjects({
         {/* Solo hover en escritorio */}
         {isDesktop && hovered && (
           <>
-            <a
-              href={viewMore ?? "#"}
-              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
+            <Link
+              to={viewMore ?? "#"}
+              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors"
             >
               Ver más info…
-            </a>
+            </Link>
             {logoGitHub && (
               <div className="absolute bottom-2 right-2">
                 <Tooltip content="Ver Repositorio" showArrow color="primary">
@@ -117,12 +118,12 @@ export default function CardProjects({
         {/* Siempre visible en tablet/móvil */}
         {!isDesktop && (
           <>
-            <a
-              href={viewMore ?? "#"}
-              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors cursor-pointer"
+            <Link
+              to={viewMore ?? "#"}
+              className="absolute top-2 right-2 bg-[#1655b4] text-white text-xs px-2 py-1 rounded-md hover:bg-blue-500 transition-colors"
             >
               Ver más info…
-            </a>
+            </Link>
             {logoGitHub && (
               <div className="absolute bottom-2 right-2">
                 <Tooltip content="Ver Repositorio" showArrow color="primary">

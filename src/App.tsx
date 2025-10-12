@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header />
-      <ScrollToHash /> {/*  esto maneja el hash y el scroll */}
+      <ScrollToHash /> {/*  esto maneja el hash, tambien el scroll */}
       <Suspense
         fallback={
           <div className="min-h-screen flex items-center justify-center">
