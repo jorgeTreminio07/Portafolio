@@ -73,9 +73,13 @@ export default function CardProjects({
                 src={img}
                 alt={`${title} - ${index + 1}`}
                 loading="lazy"
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-                  index === currentImage ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 w-full h-full transition-opacity duration-300
+          ${
+            title === "Prestamos App"
+              ? "object-contain bg-black/20"
+              : "object-cover"
+          }
+          ${index === currentImage ? "opacity-100" : "opacity-0"}`}
               />
             </React.Fragment>
           ))

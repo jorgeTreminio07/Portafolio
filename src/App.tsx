@@ -6,9 +6,9 @@ import Main from "./components/main";
 import { lazy, Suspense } from "react";
 import ScrollToHash from "./components/scroll/scrollToHash";
 import { CircularProgress } from "@heroui/react";
-
 const ClinicSystemLazy = lazy(() => import("./pages/clinicSystem"));
 const CleanArchitectureLazy = lazy(() => import("./pages/cleanArchitecture"));
+const PrestamosAppLazy = lazy(() => import("./pages/prestamosApp"));
 const NotesSystemLazy = lazy(() => import("./pages/notesSystem"));
 const NotFoundPageLazy = lazy(() => import("./pages/notFoundPage"));
 
@@ -35,6 +35,7 @@ function App() {
             path="/cleanArchitecture"
             element={<CleanArchitectureLazy />}
           />
+          <Route path="/prestamosApp" element={<PrestamosAppLazy />} />
           <Route path="/NotesSystem" element={<NotesSystemLazy />} />
           <Route path="*" element={<NotFoundPageLazy />} />
         </Routes>

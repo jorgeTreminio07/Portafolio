@@ -20,6 +20,23 @@ import notesRegistroNotas from "../../public/NotesSystem/registrodenotas.png";
 import notesFormularioRegistroNotas from "../../public/NotesSystem/formularioregitronotas.png";
 import notesConsultaNotas from "../../public/NotesSystem/consultadenotas.png";
 
+import login from "../../public/PrestamosApp/login.webp";
+import appBackups from "../../public/PrestamosApp/homePage.webp";
+import appClientForm from "../../public/PrestamosApp/clientList.webp";
+import appReportes from "../../public/PrestamosApp/createClient.webp";
+import newPrestamo from "../../public/PrestamosApp/newPrestamo.webp";
+import appPrestamoForm from "../../public/PrestamosApp/Cotizacion.webp";
+import prestamoslist from "../../public/PrestamosApp/prestamosList.webp";
+import appBackupForm from "../../public/PrestamosApp/infoPrestamo.webp";
+import reportPdf from "../../public/PrestamosApp/reportPdf.webp";
+import appLogin from "../../public/PrestamosApp/abobnoHistory.webp";
+import users from "../../public/PrestamosApp/users.webp";
+import appHome from "../../public/PrestamosApp/backup.webp";
+import appPrestamos from "../../public/PrestamosApp/configuration.webp";
+import reportScreen from "../../public/PrestamosApp/repostScreen.webp";
+import rengeDate from "../../public/PrestamosApp/randeDate.webp";
+import appReporteForm from "../../public/PrestamosApp/excelReport.webp";
+
 interface CardProjectsProps {
   title: string;
   image?: string[];
@@ -85,24 +102,36 @@ export const projectsData: CardProjectsProps[] = [
     linkGitHhub: "https://github.com/jorgeTreminio07/Clean_Architecture",
     viewMore: "/cleanArchitecture",
   },
-  // {
-  //   title: "Perez Mcgill Law Firm",
-  //   image: [
-  //     "/img/page_in_constrution.png",
-  //     "/img/page_in_constrution2.png",
-  //     "/img/page_in_constrution3.png",
-  //   ],
-  //   tags: ["WordPress", "Astra", "Css", "Html"],
-  //   children: (
-  //     <p>
-  //       Sitio web corporativo desarrollado para una firma de abogados en Estados
-  //       Unidos, con un diseño elegante, estructura optimizada para clientes y
-  //       una experiencia de usuario profesional.
-  //     </p>
-  //   ),
-  //   viewMore: "https://perezmcgilllaw.com/",
-  //   logoGitHub: false,
-  // },
+  {
+    title: "Prestamos App",
+    image: [
+      login,
+      appBackups,
+      appClientForm,
+      appReportes,
+      newPrestamo,
+      appPrestamoForm,
+      prestamoslist,
+      appBackupForm,
+      reportPdf,
+      appLogin,
+      users,
+      appHome,
+      appPrestamos,
+      reportScreen,
+      rengeDate,
+      appReporteForm,
+    ],
+    tags: ["React Native", "Sqlite", "Expo", "Typescript"],
+    children: (
+      <p>
+        Una aplicación móvil diseñada para optimizar el control financiero de
+        los préstamos y facilitar el seguimiento de clientes y pagos.
+      </p>
+    ),
+    linkGitHhub: "https://github.com/jorgeTreminio07/PrestamosApp.git",
+    viewMore: "/PrestamosApp",
+  },
   {
     title: "Sistema de Notas INATEC V1.0",
     image: [
