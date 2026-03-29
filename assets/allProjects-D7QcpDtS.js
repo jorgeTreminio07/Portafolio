@@ -1,0 +1,1 @@
+import{j as s,S as e}from"./index-D09IY6Oi.js";const l=()=>s.jsx(s.Fragment,{children:s.jsx("div",{className:"grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-20 mx-4 md:mx-20 mt-0",children:s.jsx("div",{className:"col-span-2 flex flex-col items-center text-center",children:s.jsx(e,{isMain:!1,tittle:"Todos los proyectos"})})})});export{l as default};
