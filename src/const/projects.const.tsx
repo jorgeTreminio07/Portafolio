@@ -37,6 +37,8 @@ import reportScreen from "../../public/PrestamosApp/repostScreen.webp";
 import rengeDate from "../../public/PrestamosApp/randeDate.webp";
 import appReporteForm from "../../public/PrestamosApp/excelReport.webp";
 
+import home from "../../public/PerezMcgillLaw/home.webp";
+
 interface CardProjectsProps {
   title: string;
   image?: string[];
@@ -131,6 +133,14 @@ export const projectsData: CardProjectsProps[] = [
     ),
     linkGitHhub: "https://github.com/jorgeTreminio07/PrestamosApp.git",
     viewMore: "/PrestamosApp",
+  },
+  {
+    title: "Perez McGill Law Firm",
+    image: [home],
+    tags: ["Wordpress", "Astra", "Spectra", "YoastSeo"],
+    children: <p>Sitio web corporativo para firma legal en estados unidos.</p>,
+    linkGitHhub: "https://www.perezmcgill.com/",
+    viewMore: "https://www.perezmcgill.com/",
   },
   {
     title: "Sistema de Notas INATEC V1.0",

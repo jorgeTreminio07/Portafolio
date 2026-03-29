@@ -36,4 +36,10 @@ export const certificates: ICertificateItem[] = [
     date: "2025",
     institution: "Udemy",
   },
+  {
+    logo: udemylogo,
+    tittle: "React Native Expo",
+    date: "2026",
+    institution: "Udemy",
+  },
 ];

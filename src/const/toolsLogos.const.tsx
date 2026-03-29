@@ -10,6 +10,7 @@ import pnpmLogo from "../assets/herramientas/pnpm.svg";
 import railwayLogo from "../assets/herramientas/railway.svg";
 import vercelLogo from "../assets/herramientas/vercel.svg";
 import wordpressLogo from "../assets/herramientas/wordpress.svg";
+import azureLogo from "../assets/herramientas/azuredevops.webp";
 
 export interface IToolsLogo {
   name: string;
@@ -19,7 +20,7 @@ export interface IToolsLogo {
 
 export const toolsLogos: IToolsLogo[] = [
   { name: "Git", src: gitLogo, alt: "Logo de Git" },
-  { name: "GitHub", src: githubLogo, alt: "Logo de GitHub" },
+  { name: "AzureDevops", src: azureLogo, alt: "Logo de Azure DevOps" },
   { name: "Docker", src: dockerLogo, alt: "Logo de Docker" },
   { name: "Bash", src: bashLogo, alt: "Logo de Bash" },
   { name: "Postman", src: postmanLogo, alt: "Logo de Postman" },

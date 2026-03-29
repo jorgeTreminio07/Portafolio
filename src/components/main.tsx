@@ -10,7 +10,7 @@ export default function Main() {
       <main className="pt-0 grid grid-cols-1 lg:grid-cols-2 items-start justify-items-center gap-10 px-4 md:px-8 lg:px-12">
         <MainData />
         <Technologies />
-        <Projects />
+        <Projects isMain={true} tittle="Proyectos destacados" />
         <Experience />
         <Certificates />
       </main>

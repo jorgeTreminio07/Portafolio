@@ -5,6 +5,7 @@ import postgresLogo from "../assets/backend/postgre.svg";
 import redisLogo from "../assets/backend/redis.svg";
 import sqlServerLogo from "../assets/backend/sqlserver.svg";
 import supabaseLogo from "../assets/backend/supabase.svg";
+import db2 from "../assets/backend/DB2.webp";
 
 export interface IBackLogoItem {
   name: string;
@@ -26,4 +27,5 @@ export const backendLogos: IBackLogoItem[] = [
 
   { name: "Redis", src: redisLogo, alt: "Logo de Redis" },
   { name: "Supabase", src: supabaseLogo, alt: "Logo de Supabase" },
+  { name: "Db2", src: db2, alt: "Logo de Db2" },
 ];

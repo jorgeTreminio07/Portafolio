@@ -11,6 +11,7 @@ const CleanArchitectureLazy = lazy(() => import("./pages/cleanArchitecture"));
 const PrestamosAppLazy = lazy(() => import("./pages/prestamosApp"));
 const NotesSystemLazy = lazy(() => import("./pages/notesSystem"));
 const NotFoundPageLazy = lazy(() => import("./pages/notFoundPage"));
+const AllProjectsLazy = lazy(() => import("./pages/allProjects"));
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           />
           <Route path="/prestamosApp" element={<PrestamosAppLazy />} />
           <Route path="/NotesSystem" element={<NotesSystemLazy />} />
+          <Route path="/AllProjects" element={<AllProjectsLazy />} />
           <Route path="*" element={<NotFoundPageLazy />} />
         </Routes>
       </Suspense>
