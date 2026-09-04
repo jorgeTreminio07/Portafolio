@@ -39,6 +39,12 @@ import appReporteForm from "../../public/PrestamosApp/excelReport.webp";
 
 import home from "../../public/PerezMcgillLaw/home.webp";
 
+
+import nicamarket1 from "../../public/nicamarket/nicamarket1.png";
+import nicamarket2 from "../../public/nicamarket/nicamarket2.png";
+import nicamarket3 from "../../public/nicamarket/nicamarket3.png";
+
+
 interface CardProjectsProps {
   title: string;
   image?: string[];
@@ -83,26 +89,35 @@ export const projectsData: CardProjectsProps[] = [
     viewMore: "/clinicSystem",
   },
   {
-    title: "Web API Clean Architecture Asp.net Core 9",
-    image: [authImg, postmanImg, backupImg, employeesImg, officeImg],
+    title: "Sistema Eccomerce NicaMarket",
+    image: [
+      nicamarket1,
+      nicamarket2,
+      nicamarket3,
+    ],
     tags: [
-      "Clean Architecture",
-      "Asp.Net core",
-      "Postgres",
-      "EF Core",
-      "JWT",
-      "CQRS",
-      "MediatR",
-      "AutoMapper",
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+      "Express",
     ],
     children: (
       <p>
-        Plantilla base Clean Architecture con Asp.net Core web Api 9 para
-        desarrolladores que no quieran reinventar la rueda.
+        Aplicación web Eccomerce para gestionar compras en lineas.
       </p>
     ),
-    linkGitHhub: "https://github.com/jorgeTreminio07/Clean_Architecture",
-    viewMore: "/cleanArchitecture",
+    linkGitHhub: "https://www.nicamarket.work/",
+    viewMore: "/https://www.nicamarket.work/",
+  },
+  {
+    title: "Perez McGill Law Firm",
+    image: [home],
+    tags: ["Wordpress", "Astra", "Spectra", "YoastSeo"],
+    children: <p>Sitio web corporativo para firma legal en estados unidos.</p>,
+    linkGitHhub: "https://www.perezmcgill.com/",
+    viewMore: "https://www.perezmcgill.com/",
   },
   {
     title: "Prestamos App",
@@ -135,12 +150,26 @@ export const projectsData: CardProjectsProps[] = [
     viewMore: "/PrestamosApp",
   },
   {
-    title: "Perez McGill Law Firm",
-    image: [home],
-    tags: ["Wordpress", "Astra", "Spectra", "YoastSeo"],
-    children: <p>Sitio web corporativo para firma legal en estados unidos.</p>,
-    linkGitHhub: "https://www.perezmcgill.com/",
-    viewMore: "https://www.perezmcgill.com/",
+    title: "Web API Clean Architecture Asp.net Core 9",
+    image: [authImg, postmanImg, backupImg, employeesImg, officeImg],
+    tags: [
+      "Clean Architecture",
+      "Asp.Net core",
+      "Postgres",
+      "EF Core",
+      "JWT",
+      "CQRS",
+      "MediatR",
+      "AutoMapper",
+    ],
+    children: (
+      <p>
+        Plantilla base Clean Architecture con Asp.net Core web Api 9 para
+        desarrolladores que no quieran reinventar la rueda.
+      </p>
+    ),
+    linkGitHhub: "https://github.com/jorgeTreminio07/Clean_Architecture",
+    viewMore: "/cleanArchitecture",
   },
   {
     title: "Sistema de Notas INATEC V1.0",
