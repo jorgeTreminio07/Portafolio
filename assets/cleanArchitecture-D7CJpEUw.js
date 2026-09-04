@@ -1,4 +1,4 @@
-import{j as e,a as o,p as d,f as i,g as n,o as l}from"./index-CzyThe-Y.js";import{B as t}from"./baseScreen-ag90vZ1M.js";function x(){const s=[o,d,i,n,l];return e.jsx(t,{title:"Web API Clean Architecture Asp.net Core 9",description:`Plantilla base de Clean Architecture con ASP.NET\r
+import{j as e,a as o,p as d,f as i,g as n,o as l}from"./index-Dc3m3dWX.js";import{B as t}from"./baseScreen-CKJBS2BN.js";function x(){const s=[o,d,i,n,l];return e.jsx(t,{title:"Web API Clean Architecture Asp.net Core 9",description:`Plantilla base de Clean Architecture con ASP.NET\r
       Core Web API 9, diseñada para ayudar a desarrolladores\r
       a iniciar proyectos de forma rápida, manteniendo una estructura\r
       escalable, organizada y siguiendo buenas prácticas, sin necesidad\r
