@@ -109,7 +109,7 @@ export const projectsData: CardProjectsProps[] = [
       </p>
     ),
     linkGitHhub: "https://www.nicamarket.work/",
-    viewMore: "/https://www.nicamarket.work/",
+    viewMore: "https://www.nicamarket.work/",
   },
   {
     title: "Perez McGill Law Firm",
